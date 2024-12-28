@@ -1,0 +1,148 @@
+.preview-header-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mobile-header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+}
+.button-mobile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.preview-mobile-logo-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 110px;
+  height: 23px;
+  margin-bottom: 20px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.mobile-second-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7px;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  width: 90vw;
+  margin: 10px;
+  padding: 8px 0;
+  z-index: 3;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .dropdown-menu {
+    width: 250px;
+    margin: 0px;
+  }
+}
+
+.dropdown-option {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.dropdown-option.active {
+  color: #007aff;
+  font-weight: bold;
+}
+
+.dropdown-option:hover {
+  background-color: #f9f9f9;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0 16px;
+  border: 1px solid #a9a9a9;
+  width: 100%;
+}
+
+.mobile-save-button {
+  background-color: #2832e9;
+  height: 38px;
+  width: 80px;
+  border-radius: 30px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+.desktop-header {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    align-items: center;
+  }
+}

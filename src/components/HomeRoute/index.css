@@ -1,0 +1,102 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .home-page {
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+}
+.logo-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 110px;
+  height: 23px;
+  margin-bottom: 50px;
+}
+
+.logo-img {
+  width: 105px;
+  height: 21px;
+}
+@media (min-width: 768px) {
+  .logo-img {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+.home-content-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+@media (min-width: 768px) {
+  .home-content-container {
+    margin-left: 100px;
+    padding-top: 60px;
+    padding-left: 100px;
+  }
+}
+
+.apple-para {
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto';
+  margin-bottom: 7px;
+}
+@media (min-width: 768px) {
+  .apple-para {
+    font-size: 21px;
+  }
+}
+
+.choose-heading {
+  margin-top: 0px;
+  font-family: 'Roboto';
+}
+@media (min-width: 768px) {
+  .choose-heading {
+    margin-top: 0px;
+    font-size: 55px;
+    font-family: 'Roboto';
+  }
+}
+
+.get-button {
+  background-color: #2832e9;
+  height: 40px;
+  border-radius: 30px;
+  width: 130px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.home-watch-img {
+  height: 450px;
+  width: 80vw;
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .home-watch-img {
+    height: 550px;
+    width: 380px;
+    margin-top: 30px;
+    align-self: flex-end;
+  }
+}

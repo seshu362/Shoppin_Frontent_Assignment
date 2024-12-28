@@ -1,0 +1,463 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .product-container {
+    margin-top: 10px;
+  }
+}
+
+.product-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.watch-display {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.watch-band {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.watch-case {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.side-view-button {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-top: 0px;
+  font-family: 'Roboto';
+  cursor: pointer;
+  color: #6495ed;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.collection-text {
+  color: #757675;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.watch-details-text {
+  color: #0b0c0b;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+
+.price-text {
+  color: #4b4c4b;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 0px;
+  font-family: 'Roboto';
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .button-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.button-size {
+  height: 40px;
+  padding: 10px;
+  background-color: #d0d1d0;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-family: 'Roboto';
+  border-radius: 25px;
+  width: 100px;
+  align-self: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.size-button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+  background-color: #d0d1d0;
+  height: 40px;
+}
+
+.numb-size-btn{
+  font-size: 17px;
+  font-family: "Roboto";
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Case Page Container */
+.case-page {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.case-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.case-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.case-row::-webkit-scrollbar {
+  display: none;
+}
+
+.case-image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 10px;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.case-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.case-band {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.case-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550px;
+  height: 150px;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.active-case .case-image {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+}
+
+.get-active-image {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.watch-details {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #000000;
+}
+
+.band-selection-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  height: 100vh;
+  justify-content: center;
+}
+
+.band-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.case-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.scroll-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  background-color: transparent;
+}
+
+.scroll-left {
+  position: absolute;
+  left: 10px;
+  z-index: 5;
+}
+
+.scroll-right {
+  position: absolute;
+  right: 10px;
+  z-index: 5;
+}
+
+.band-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+.band-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.selected-band {
+  border: 2px solid #007aff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.band-image {
+  width: 250px;
+  height: auto;
+}
+
+.band-watch-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  z-index: 10;
+}
+
+.details-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Case Page Styling */
+.case-page {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  border: 2px solid rebeccapurple;
+}
+
+.case-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px 0;
+}
+
+.case-row {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 5px;
+  scrollbar-width: none;
+  max-width: 100%;
+}
+
+.case-row::-webkit-scrollbar {
+  display: none;
+}
+
+.case-item {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+
+.case-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.case-band {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.active-case .case-image {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 5px;
+}
+
+.left-arrow {
+  left: 5px; /* Adjust for smaller screens */
+}
+
+.right-arrow {
+  right: 5px;
+}
+
+.back-button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
